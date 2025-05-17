@@ -1,0 +1,30 @@
+pip install langchain==0.1.14 langchain-community==0.0.32 langchain-core==0.1.38 pypdf==3.17.4 sentence-transformers==2.4.0 transformers==4.38.2 chromadb==0.4.24 ollama==0.1.7 streamlit==1.33.0 python-dotenv tiktoken
+
+
+# ---------------------------
+# Core RAG QA dependencies
+# ---------------------------
+langchain==0.1.17
+langchain-community==0.0.36          # integrations (Ollama, Chroma, etc.)
+
+# Vector store
+chromadb==0.4.24                      # uses SQLite ≥3.35 (Python 3.11 bundles this)
+
+# Embeddings
+sentence-transformers==2.4.0
+transformers==4.38.2                  # backbone for HF models
+
+# PDF loader / parsing
+pypdf==3.17.4
+
+# UI
+streamlit==1.33.0
+
+# Local LLM runtime
+ollama==0.1.7                         # client library to talk to the Ollama server
+
+# Utilities
+python-dotenv==1.1.0                  # load .env files
+tiktoken==0.9.0                       # tokenizer utility (optional but common)
+
+# (langchain installs the right langchain-core version automatically)
